@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="05/10/2022"
+            android:background="@drawable/border"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/black"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/img_receive_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txt_receive_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/receiveborder"
+            android:backgroundTint="@color/black"
+            android:layout_below="@+id/date"
+            android:maxWidth="300dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp"
+            android:text="this is a receive messege."
+            android:layout_alignBottom="@+id/img_receive_message"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:minWidth="70dp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txt_receive_message"
+            android:layout_alignBottom="@+id/txt_receive_message"
+            android:background="@drawable/receiveborder"
+            android:backgroundTint="@color/black"
+            android:text="15:20"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

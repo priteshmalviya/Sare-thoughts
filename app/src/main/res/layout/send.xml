@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="05/10/2022"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/img_send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txt_send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="300dp"
+            android:layout_below="@id/date"
+            android:layout_alignParentRight="true"
+            android:text="."
+            android:background="@drawable/sendborder"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="20dp"
+            android:layout_alignBottom="@+id/img_send_message"
+            android:textSize="16sp"
+            android:minWidth="85dp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txt_send_message"
+            android:layout_alignBottom="@+id/txt_send_message"
+            android:background="@drawable/sendborder"
+            android:backgroundTint="@color/black"
+            android:text="15:20 pm"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/isseen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/time"
+            android:layout_alignBottom="@+id/txt_send_message"
+            android:background="@drawable/sendborder"
+            android:backgroundTint="@color/black"
+            android:text="Sent"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
